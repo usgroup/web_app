@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sofselofan - Sotish</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/selectize.bootstrap5.css">
     <style>
         body {
             font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
@@ -13,6 +14,14 @@
         }
         a {
             color: var(--tg-theme-link-color);
+        }
+        .form-select {
+            font-size: 12px;
+            height: 32px;
+            color: #343a40;
+            border-radius: .375rem;
+            padding: .375rem .75rem;
+            border: 1px solid #ced4da;
         }
         </style>
 </head>
@@ -25,11 +34,18 @@
         </div>
         <div class="row">
             <div class="col-sm-12 mt-3">
-                <select name="" class="form-select">
+                <select name="" class="search">
                     <option value="">Nasiyachi</option>
-                    <option value="">Abdulhamid</option>
-                    <option value="">Javlon</option>
-                    <option value="">Abdullo</option>
+                    <option value="1">Abdulhamid</option>
+                    <option value="2">Javlon</option>
+                    <option value="3">Abdullo</option>
+                </select>
+            </div>
+            <div class="col-sm-12 mt-3">
+                <select name="" class="form-select form-select-sm">
+                    <option value="">Kassa</option>
+                    <option value="1">Kassa 1 (UZS)</option>
+                    <option value="2">Kassa 2 (USD)</option>
                 </select>
             </div>
             <div class="col-sm-12 mt-3">
@@ -40,6 +56,7 @@
     <script src="./js/telegram-web-app.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/selectize.min.js"></script>
     <script src="./js/custom.js"></script>
 </body>
 </html>
